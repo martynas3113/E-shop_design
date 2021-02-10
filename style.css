@@ -65,7 +65,7 @@ a {
   transform: translate(-50%, -20%);
   color: white;
   padding: 20px;
-  padding-left: 40px;
+  padding-left: 80px;
 }
 .item-text .mobile {
   font-size: 25px;
@@ -79,7 +79,6 @@ a {
 }
 .item-text button {
   background-color: #00f0fe;
-  color: white;
   outline: none;
   box-shadow: none;
   border: none;
