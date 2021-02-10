@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.color-primary {
+  color: #003859;
+}
+
+.color-primary-bg {
+  background-color: #003859;
+}
+
+.color-second {
+  color: #00A5C4;
+}
+
+.color-second-bg {
+  background-color: #00A5C4;
+}
+
+.color-yellow {
+  background-color: #FFD289;
+}
+
+.item-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -20%);
+  color: white;
+  padding: 20px;
+  padding-left: 40px;
+}
+.item-text .mobile {
+  font-size: 25px;
+}
+.item-text h3 {
+  font-size: 70px;
+}
+.item-text .spec {
+  font-size: 20px;
+  width: 80%;
+}
+.item-text button {
+  background-color: #00f0fe;
+  color: white;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  font-size: 23px;
+  font-weight: 500;
+  margin-top: 20px;
+  max-width: 200px;
+  padding: 15px 30px;
+  transition: all 0.3s ease;
+}
+.item-text button:hover {
+  cursor: pointer;
+  color: #00f0fe;
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
