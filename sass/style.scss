@@ -48,3 +48,12 @@
      
   }
  
+  .carousel-products{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .product-img{
+      display: inline-block;
+      max-width: 300px;
+  }

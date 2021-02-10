@@ -36,6 +36,10 @@ a {
   font-size: 20px;
 }
 
+.color-black {
+  color: black !important;
+}
+
 .color-primary {
   color: #003859;
 }
@@ -93,6 +97,17 @@ a {
   cursor: pointer;
   color: #00f0fe;
   background-color: white;
+}
+
+.carousel-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-img {
+  display: inline-block;
+  max-width: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
