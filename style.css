@@ -36,6 +36,10 @@ a {
   font-size: 20px;
 }
 
+.color-black {
+  color: black !important;
+}
+
 .color-primary {
   color: #003859;
 }
@@ -56,6 +60,39 @@ a {
   background-color: #FFD289;
 }
 
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0px;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #003859;
+  padding: 0px 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0px;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
 .item-text {
   display: flex;
   flex-direction: column;
@@ -65,7 +102,7 @@ a {
   transform: translate(-50%, -20%);
   color: white;
   padding: 20px;
-  padding-left: 40px;
+  padding-left: 80px;
 }
 .item-text .mobile {
   font-size: 25px;
@@ -79,7 +116,6 @@ a {
 }
 .item-text button {
   background-color: #00f0fe;
-  color: white;
   outline: none;
   box-shadow: none;
   border: none;
@@ -94,6 +130,21 @@ a {
   cursor: pointer;
   color: #00f0fe;
   background-color: white;
+}
+
+.carousel-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-img {
+  display: inline-block;
+  max-width: 300px;
+}
+
+#filters {
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
