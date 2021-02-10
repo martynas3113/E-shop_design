@@ -143,4 +143,8 @@ a {
   max-width: 300px;
 }
 
+#filters {
+  float: right;
+}
+
 /*# sourceMappingURL=style.css.map */
