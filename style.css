@@ -93,6 +93,11 @@ a {
   margin-right: -4rem;
 }
 
+#special-price .grid .grid-item {
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+}
+
 .item-text {
   display: flex;
   flex-direction: column;
@@ -145,6 +150,11 @@ a {
 
 #filters {
   float: right;
+}
+
+#special-price .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
