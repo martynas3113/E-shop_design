@@ -44,4 +44,17 @@ $(document).ready(function(){
             }
         }
     });
+    $("#latest-blogs .owl-carousel").owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            600: {
+                items:3
+            },
+        }
+    });
   });
