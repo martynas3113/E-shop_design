@@ -96,6 +96,17 @@ a {
 #special-price .grid .grid-item {
   margin-top: 1.2rem;
   margin-right: 1rem;
+  transition: transform 0.5s ease;
+}
+#special-price .grid .grid-item:hover {
+  transform: scale(1.1);
+}
+
+#new-phones .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#new-phones .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
 }
 
 .item-text {
