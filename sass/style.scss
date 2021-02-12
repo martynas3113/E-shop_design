@@ -5,6 +5,8 @@
 @import './include/typography.scss';
 @import './include/color.scss';
 @import './include/top-sale.scss';
+@import './include/special-price.scss';
+@import './include/new-phones.scss';
 
 .item-text{
     display: flex;
@@ -62,3 +64,10 @@
   #filters{
       float: right;
   }
+
+  #special-price{
+    .grid .grid-item{
+        margin-right: 1.2rem;
+        margin-top: 1rem;
+    }
+}

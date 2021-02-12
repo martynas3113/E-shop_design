@@ -1,0 +1,15 @@
+#special-price {
+    .grid .grid-item{
+        margin-top: 1.2rem;
+        margin-right: 1rem;
+        transition: transform 0.5s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+}
+
+
+
