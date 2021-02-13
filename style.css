@@ -56,7 +56,7 @@ a {
   background-color: #00A5C4;
 }
 
-.color-yellow {
+.color-yellow-bg {
   background-color: #FFD289;
 }
 
@@ -127,6 +127,20 @@ a {
 #special-price .grid .grid-item {
   margin-right: 1.2rem;
   margin-top: 1rem;
+}
+
+.qty-up {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  border: 1px solid lightgray;
+}
+
+.qty-down {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  border: 1px solid lightgray;
 }
 
 /*# sourceMappingURL=style.css.map */
