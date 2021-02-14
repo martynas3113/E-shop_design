@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $("#banner-area .owl-carousel").owlCarousel({
         dots: true,
@@ -60,6 +61,13 @@ $(document).ready(function(){
             },
         }
     });
+    let $qty_up = $(".qty .qty-up");
+    let $qty_down = $(".qty .qty-down");
+    $qty_up.click(function(e){
 
+        let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
+        let $price = $(`.product_price[data-id='${$(this).data("id")}']`);
+    });
    
   });
+
