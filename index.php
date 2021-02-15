@@ -21,7 +21,5 @@ include('header.php')
     include('Template/_latest-blogs.php')
 ?>
 <?php 
-    
     include('footer.php');
-
 ?>
