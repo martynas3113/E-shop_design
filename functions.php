@@ -10,12 +10,7 @@ $db = new DBController();
 $product = new Product($db);
 $blogs = new Product($db);
 
-$cart = new Cart($db);
-$arr = [
-    "user_id"=>1,
-    "item_id"=>3
+$Cart = new Cart($db);
 
-];
-$cart ->insertIntoCart($arr);
 
 
