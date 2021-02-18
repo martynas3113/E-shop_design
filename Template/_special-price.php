@@ -4,6 +4,7 @@
     },$product_shuffle);
     $unique = array_unique($brand);
     sort($unique);
+    $shuffle = shuffle($product_shuffle);
 
 ?>
 
