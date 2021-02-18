@@ -22,7 +22,7 @@
                     <div class="grid-item m-1 border <?php echo $item['item_brand'] ?? "Brand"; ?>">
                         <div class="item py-2" style="width: 200px">
                             <div class="product font-rale">
-                                <a href="#"><img src="<?php echo $item['item_image']?? "./assets/products/13.png" ?>" class="img-fluid" alt=""></a>
+                                <a href="product.php?item_id=<?php echo $item['item_id'] ?>"><img src="<?php echo $item['item_image']?? "./assets/products/13.png" ?>" class="img-fluid" alt=""></a>
                                 <div class="text-center">
                                     <h6><?php echo $item['item_name'] ?? "Unknown" ?></h6>
                                     <div class="rating text-warning font-size-12">
