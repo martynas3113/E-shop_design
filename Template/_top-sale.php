@@ -1,5 +1,5 @@
 <?php 
-   $product_shuffle = $product ->getData();
+   
    $shuffle = shuffle($product_shuffle);
 
    if($_SERVER['REQUEST_METHOD'] == "POST"){
