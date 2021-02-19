@@ -1,3 +1,11 @@
+<?php 
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        if (isset($_POST['delete-cart-submit'])){
+            $deletedrecord = $Cart->deleteItem($_POST['item_id']);
+        };
+    };
+?>
+
 <section id="cart" class="py-3">
            <div class="container-fluid w-75">
             <h5 class="font-baloo font-size-20">Shopping Cart</h5>
@@ -33,7 +41,11 @@
                                         <input data-id="pro1" type="text" class="qty_input border px-2 w-100 bg-light" disabled value="1" placeholder="1">
                                         <button data-id="pro1" class="qty-down border-bg-light"><i class="fas fa-angle-down"></i></button>
                                  </div>
-                                 <button type="submit" class="btn font-baloo text-danger px-3 border-right">Delete</button>
+                                 <form method="post">
+                                <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
+                                <button type="submit" name="delete-cart-submit" class="btn font-baloo text-danger px-3 border-right">Delete</button>
+                            </form>
+                                 
                              </div>
                         </div>
                         <div class="col-sm-2 text-end">
