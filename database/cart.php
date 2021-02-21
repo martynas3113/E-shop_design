@@ -46,7 +46,7 @@ class Cart
         if($item_id!=null){
             $result = $this->db->con->query("DELETE FROM {$table} WHERE item_id={$item_id}");
             if($result){
-                header("Location".$_SERVER['PHP_SELF']);
+                header("Location: " . $_SERVER['PHP_SELF']);
             }
             return $result;
         }
@@ -59,6 +59,29 @@ class Cart
                 $sum += floatval($item[0]);
             }
             return sprintf('%.2f' , $sum);
+        }
+    }
+
+    public function getCartId($cartArray = null,$key = 'item_id'){
+        if($cartArray != null){
+            $cart_id = array_map(function($value)use($key){
+                return $value[$key];
+
+            },$cartArray);
+            return $cart_id;
+        }
+    }
+
+    public  function addToCartProduct($userid, $itemid){
+        if (isset($userid) && isset($itemid)){
+            $params = array(
+                "user_id" => $userid,
+                "item_id" => $itemid
+            );
+
+            // insert data into cart
+            $result = $this->insertIntoCart($params);
+            
         }
     }
 
