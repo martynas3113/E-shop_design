@@ -72,4 +72,17 @@ class Cart
         }
     }
 
+    public  function addToCartProduct($userid, $itemid){
+        if (isset($userid) && isset($itemid)){
+            $params = array(
+                "user_id" => $userid,
+                "item_id" => $itemid
+            );
+
+            // insert data into cart
+            $result = $this->insertIntoCart($params);
+            
+        }
+    }
+
 }
